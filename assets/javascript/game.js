@@ -29,7 +29,7 @@ $("#crystalOne").on("click", function () {
     if (counter === randNumber) {
         wins++;
         $("#wins").text("Wins: " + wins);
-        console.log("you win" + wins);
+        console.log("you win " + wins);
         reset();
     }
     else if (counter > randNumber) {
@@ -49,7 +49,7 @@ $("#crystalTwo").on("click", function () {
     if (counter === randNumber) {
         wins++;
         $("#wins").text("Wins: " + wins);
-        console.log("you win" + wins);
+        console.log("you win " + wins);
         reset();
     }
     else if (counter > randNumber) {
@@ -69,7 +69,7 @@ $("#crystalThree").on("click", function () {
     if (counter === randNumber) {
         wins++;
         $("#wins").text("Wins: " + wins);
-        console.log("you win" + wins);
+        console.log("you win " + wins);
         reset();
     }
     else if (counter > randNumber) {
@@ -89,7 +89,7 @@ $("#crystalFour").on("click", function () {
     if (counter === randNumber) {
         wins++;
         $("#wins").text("Wins: " + wins);
-        console.log("you win" + wins);
+        console.log("you win " + wins);
         reset();
     }
     else if (counter > randNumber) {
