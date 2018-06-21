@@ -14,15 +14,14 @@ h1 {
 }
 
 @keyframes example {
-    0%   {color: blue;}
-    25%  {color: green;}
-    50%  {color: red;}
-    100% {color: orange;}
+    0%   {color: #7dc4ed;}
+    25%  {color: #479949;}
+    50%  {color: #b20200;}
+    100% {color: #db9202;}
 }
 
 ul li {
-    line-height: 2;
-    
+    line-height: 2;    
 }
 
 #targetNumbner {
