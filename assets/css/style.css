@@ -22,9 +22,11 @@ h1 {
 
 ul li {
     line-height: 2;
+    
 }
 
 #targetNumbner {
+    margin-top: 30px;
     font-size: 50px;
 }
 
@@ -50,4 +52,14 @@ ul li {
 
 #totalScore {
     font-size: 50px;
+}
+
+#wins {
+    font-size: 35px;
+    color: green;
+}
+
+#losses {
+    font-size: 35px;
+    color: red;
 }
