@@ -101,7 +101,6 @@ $(document).ready(function () {
             reset();
         }
     });
-
 });
 //generate random number between 19-120
 //output number
