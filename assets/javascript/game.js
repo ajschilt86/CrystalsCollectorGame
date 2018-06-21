@@ -7,8 +7,6 @@ var counter = 0;
 var wins = 0;
 var losses = 0;
 
-console.log(randNumber);
-
 function reset() {
     randNumber = Math.floor(Math.random() * 120) + 19;
     randomCrystalNumber1 = Math.floor(Math.random() * 12) + 1;
@@ -16,21 +14,17 @@ function reset() {
     randomCrystalNumber3 = Math.floor(Math.random() * 12) + 1;
     randomCrystalNumber4 = Math.floor(Math.random() * 12) + 1;
     counter = 0;
-    $("#totalScore").text("Total Score: 0");
-    $("#targetNumbner").text("Target Number: " + randNumber);
-   
-    console.log(randNumber);
+    $("#totalScore").text("Current Score: 0");
+    $("#targetNumbner").text("Target Number: " + randNumber);       
 }
 
 $("#targetNumbner").text("Target Number: " + randNumber);
-
-
 
 $("#crystalOne").on("click", function () {
     counter += randomCrystalNumber1;
     console.log(randomCrystalNumber1);
 
-    $("#totalScore").text("Total Score: " + counter);
+    $("#totalScore").text("Current Score: " + counter);
 
     if (counter === randNumber) {
         wins++;
@@ -47,11 +41,10 @@ $("#crystalOne").on("click", function () {
 });
 
 $("#crystalTwo").on("click", function () {
-
     counter += randomCrystalNumber2;
     console.log(randomCrystalNumber2);
 
-    $("#totalScore").text("Total Score: " + counter);
+    $("#totalScore").text("Current Score: " + counter);
 
     if (counter === randNumber) {
         wins++;
@@ -68,11 +61,10 @@ $("#crystalTwo").on("click", function () {
 });
 
 $("#crystalThree").on("click", function () {
-
     counter += randomCrystalNumber3;
     console.log(randomCrystalNumber3);
 
-    $("#totalScore").text("Total Score: " + counter);
+    $("#totalScore").text("Current Score: " + counter);
 
     if (counter === randNumber) {
         wins++;
@@ -89,11 +81,10 @@ $("#crystalThree").on("click", function () {
 });
 
 $("#crystalFour").on("click", function () {
-
     counter += randomCrystalNumber4;
     console.log(randomCrystalNumber4);
 
-    $("#totalScore").text("Total Score: " + counter);
+    $("#totalScore").text("Current Score: " + counter);
 
     if (counter === randNumber) {
         wins++;
@@ -108,7 +99,6 @@ $("#crystalFour").on("click", function () {
         reset();
     }
 });
-
 
 
 //generate random number between 19-120

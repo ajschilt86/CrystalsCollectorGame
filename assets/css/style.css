@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    font-family: 'Audiowide', cursive;
 }
 h1 {
     text-align: center;
@@ -9,7 +10,7 @@ h1 {
     width: 100%;
     color: blue;
     animation-name: example;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
@@ -21,7 +22,7 @@ h1 {
 }
 
 ul li {
-    line-height: 2;    
+    line-height: 2;   
 }
 
 #targetNumbner {
@@ -31,6 +32,7 @@ ul li {
 
 #crystals {
     margin: 25px 0;
+    
 }
 
 #crystalOne {
