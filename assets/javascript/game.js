@@ -1,3 +1,5 @@
+$(document).ready(function() {
+    
 var randNumber = Math.floor(Math.random() * 120) + 19;
 var randomCrystalNumber1 = Math.floor(Math.random() * 12) + 1;
 var randomCrystalNumber2 = Math.floor(Math.random() * 12) + 1;
@@ -100,7 +102,7 @@ $("#crystalFour").on("click", function () {
     }
 });
 
-
+});
 //generate random number between 19-120
 //output number
 //crystals random number between 1-12
