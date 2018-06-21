@@ -1,4 +1,5 @@
-var targetNumber = Math.floor(Math.random() * 120) + 19;
+var randNumber = Math.floor(Math.random() * 120) + 19;
+var targetNumbner = randNumber;
 var randomCrystalNumber1 = Math.floor(Math.random() * 12) + 1;
 var randomCrystalNumber2 = Math.floor(Math.random() * 12) + 1;
 var randomCrystalNumber3 = Math.floor(Math.random() * 12) + 1;
@@ -7,44 +8,41 @@ var counter = 0;
 var wins = 0;
 var losses = 0;
 
-console.log(targetNumber);
+console.log(targetNumbner);
 
-function reset() {
-    targetNumber = Math.floor(Math.random() * 120) + 19;
+function reset() {    
+    randNumber = Math.floor(Math.random() * 120) + 19;
+    targetNumbner = randNumber;
     randomCrystalNumber1 = Math.floor(Math.random() * 12) + 1;
     randomCrystalNumber2 = Math.floor(Math.random() * 12) + 1;
     randomCrystalNumber3 = Math.floor(Math.random() * 12) + 1;
     randomCrystalNumber4 = Math.floor(Math.random() * 12) + 1;
     counter = 0;
-    wins = 0;
-    losses = 0;
     $("#totalScore").text("Total Score: ");
+    $("#targetNumbner").text("Target Number: " + targetNumbner);
+    console.log(randNumber);
 }
 
-
-$("#targetNumbner").text(targetNumber);
-
+$("#targetNumbner").text("Target Number: " + targetNumbner);
 
 $("#crystalOne").on("click", function () {
-
     counter += randomCrystalNumber1;
     console.log(randomCrystalNumber1);
 
     $("#totalScore").text("Total Score: " + counter);
 
-    if (counter === targetNumber) {
+    if (counter === targetNumbner) {
         wins++;
         $("#wins").text("wins: " + wins);
         console.log("you win" + wins);
         reset();
     }
-    else if (counter > targetNumber) {
+    else if (counter > targetNumbner) {
         losses++;
         $("#losses").text("losses: " + losses);
         console.log("you lose " + losses);
         reset();
     }
-
 });
 
 $("#crystalTwo").on("click", function () {
@@ -54,19 +52,18 @@ $("#crystalTwo").on("click", function () {
 
     $("#totalScore").text("Total Score: " + counter);
 
-    if (counter === targetNumber) {
+    if (counter === targetNumbner) {
         wins++;
         $("#wins").text("wins: " + wins);
         console.log("you win" + wins);
         reset();
     }
-    else if (counter > targetNumber) {
+    else if (counter > targetNumbner) {
         losses++;
         $("#losses").text("losses: " + losses);
         console.log("you lose " + losses);
         reset();
     }
-
 });
 
 $("#crystalThree").on("click", function () {
@@ -76,19 +73,18 @@ $("#crystalThree").on("click", function () {
 
     $("#totalScore").text("Total Score: " + counter);
 
-    if (counter === targetNumber) {
+    if (counter === targetNumbner) {
         wins++;
         $("#wins").text("wins: " + wins);
         console.log("you win" + wins);
         reset();
     }
-    else if (counter > targetNumber) {
+    else if (counter > targetNumbner) {
         losses++;
         $("#losses").text("losses: " + losses);
         console.log("you lose " + losses);
         reset();
     }
-
 });
 
 $("#crystalFour").on("click", function () {
@@ -98,29 +94,19 @@ $("#crystalFour").on("click", function () {
 
     $("#totalScore").text("Total Score: " + counter);
 
-    if (counter === targetNumber) {
+    if (counter === targetNumbner) {
         wins++;
         $("#wins").text("wins: " + wins);
-        console.log(" you win" + wins);
+        console.log("you win" + wins);
         reset();
     }
-    else if (counter > targetNumber) {
+    else if (counter > targetNumbner) {
         losses++;
         $("#losses").text("losses: " + losses);
         console.log("you lose " + losses);
         reset();
     }
-
 });
-
-
-
-
-
-
-
-
-
 
 
 

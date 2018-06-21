@@ -1,7 +1,36 @@
-#targetNumbner {
+body {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    font-family: 'Audiowide', cursive;
     font-size: 100px;
+    margin: 0 auto;
+    width: 100%;
+    color: blue;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
+@keyframes example {
+    0%   {color: blue;}
+    25%  {color: green;}
+    50%  {color: red;}
+    100% {color: orange;}
+}
+
+ul li {
+    line-height: 2;
+}
+
+#targetNumbner {
+    font-size: 50px;
+}
+
+#crystals {
+    margin: 25px 0;
+}
 
 #crystalOne {
     height: 200px;

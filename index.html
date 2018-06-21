@@ -9,26 +9,36 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
     <h1>Crystal Colelctor</h1>
-    <h3>Rules:</h3>
+    <ul>
+        <li>You will be given a random number at the start of the game</li>
+        <li>There are four crystals below. When you click on each crystal, a certain number will be added to your total score.</li>
+        <li>If you get your score to the target number you win! If you go over, you lose :(</li>
+        <li>Each time you get a new target number, the value of each crystal changes</li>
+    </ul>
     <h2 id="targetNumbner"></h2>
-    <img id="crystalOne" src="assets/images/crystal1.jpg">
-    <img id="crystalTwo"src="assets/images/crystal2.png">
-    <img id="crystalThree"src="assets/images/crystal3.jpg">
-    <img id="crystalFour"src="assets/images/crystal4.png">
-    <h5 id="totalScore"> Total Score:</h5>
-    <h5 id"wins"><h/5>
-    <h5 id"losses"><h/5>
+    <div id="crystals">
+        <img id="crystalOne" src="assets/images/crystal1.jpg">
+        <img id="crystalTwo" src="assets/images/crystal2.png">
+        <img id="crystalThree" src="assets/images/crystal3.jpg">
+        <img id="crystalFour" src="assets/images/crystal4.png">
+    </div>
+    <h5 id="totalScore"> Total Score: 0</h5>
+    <h5 id "wins">
+        <h/5>
+            <h5 id "losses">
+                <h/5>
 
-    
 
 
-    <script src="assets/javascript/game.js"></script>
+
+                    <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>
