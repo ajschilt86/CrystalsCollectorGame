@@ -67,6 +67,10 @@ ul li {
 
 @media screen and (max-width: 640px) {
 
+    h1 {
+        font-size: 80px;
+    }
+
     #crystalOne {
         height: 100px;
         width: 70px;
