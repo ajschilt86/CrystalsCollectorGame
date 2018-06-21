@@ -64,3 +64,43 @@ ul li {
     font-size: 35px;
     color: red;
 }
+
+@media screen and (max-width: 640px) {
+
+    #crystalOne {
+        height: 100px;
+        width: 50px;
+    }
+
+    #crystalTwo {
+        height: 100px;
+        width: 50px;
+    }
+
+    #crystalThree {
+        height: 100px;
+        width: 50px;
+    }
+
+    #crystalFour {
+        height: 100px;
+        width: 50px;
+    }
+
+    #targetNumbner {
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    
+    #totalScore {
+        font-size: 20px;
+    }
+
+    #wins {
+        font-size: 15px;
+    }
+    
+    #losses {
+        font-size: 15px;
+    }
+}
