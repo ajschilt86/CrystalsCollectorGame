@@ -24,80 +24,60 @@ $(document).ready(function () {
 
     $("#crystalOne").on("click", function () {
         counter += randomCrystalNumber1;
-        console.log(randomCrystalNumber1);
-
         $("#totalScore").text("Current Score: " + counter);
-
         if (counter === randNumber) {
             wins++;
             $("#wins").text("Wins: " + wins);
-            console.log("you win " + wins);
             reset();
         }
         else if (counter > randNumber) {
             losses++;
             $("#losses").text("Losses: " + losses);
-            console.log("you lose " + losses);
             reset();
         }
     });
 
     $("#crystalTwo").on("click", function () {
         counter += randomCrystalNumber2;
-        console.log(randomCrystalNumber2);
-
         $("#totalScore").text("Current Score: " + counter);
-
         if (counter === randNumber) {
             wins++;
             $("#wins").text("Wins: " + wins);
-            console.log("you win " + wins);
             reset();
         }
         else if (counter > randNumber) {
             losses++;
             $("#losses").text("Losses: " + losses);
-            console.log("you lose " + losses);
             reset();
         }
     });
 
     $("#crystalThree").on("click", function () {
         counter += randomCrystalNumber3;
-        console.log(randomCrystalNumber3);
-
         $("#totalScore").text("Current Score: " + counter);
-
         if (counter === randNumber) {
             wins++;
             $("#wins").text("Wins: " + wins);
-            console.log("you win " + wins);
             reset();
         }
         else if (counter > randNumber) {
             losses++;
             $("#losses").text("Losses: " + losses);
-            console.log("you lose " + losses);
             reset();
         }
     });
 
     $("#crystalFour").on("click", function () {
         counter += randomCrystalNumber4;
-        console.log(randomCrystalNumber4);
-
         $("#totalScore").text("Current Score: " + counter);
-
         if (counter === randNumber) {
             wins++;
             $("#wins").text("Wins: " + wins);
-            console.log("you win " + wins);
             reset();
         }
         else if (counter > randNumber) {
             losses++;
             $("#losses").text("Losses: " + losses);
-            console.log("you lose " + losses);
             reset();
         }
     });
