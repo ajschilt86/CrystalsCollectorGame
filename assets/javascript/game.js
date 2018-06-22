@@ -81,6 +81,78 @@ $(document).ready(function () {
             reset();
         }
     });
+
+    $(document).keydown(function (e) {
+        var key_one = 49;
+        var key_two = 50;
+        var key_three = 51;
+        var key_four = 52;
+
+        if (e.keyCode == key_one) {
+            counter += randomCrystalNumber1;
+            $("#totalScore").text("Current Score: " + counter);
+            console.log(randomCrystalNumber1);
+
+            if (counter === randNumber) {
+                wins++;
+                $("#wins").text("Wins: " + wins);
+                reset();
+            }
+            else if (counter > randNumber) {
+                losses++;
+                $("#losses").text("Losses: " + losses);
+                reset();
+            }
+        }
+
+        if (e.keyCode == key_two) {
+            counter += randomCrystalNumber2;
+            $("#totalScore").text("Current Score: " + counter);
+            console.log(randomCrystalNumber2);
+            if (counter === randNumber) {
+                wins++;
+                $("#wins").text("Wins: " + wins);
+                reset();
+            }
+            else if (counter > randNumber) {
+                losses++;
+                $("#losses").text("Losses: " + losses);
+                reset();
+            }
+        }
+
+        if (e.keyCode == key_three) {
+            counter += randomCrystalNumber3;
+            $("#totalScore").text("Current Score: " + counter);
+            console.log(randomCrystalNumber3);
+            if (counter === randNumber) {
+                wins++;
+                $("#wins").text("Wins: " + wins);
+                reset();
+            }
+            else if (counter > randNumber) {
+                losses++;
+                $("#losses").text("Losses: " + losses);
+                reset();
+            }
+        }
+
+        if (e.keyCode == key_four) {
+            counter += randomCrystalNumber4;
+            $("#totalScore").text("Current Score: " + counter);
+            console.log(randomCrystalNumber4);
+            if (counter === randNumber) {
+                wins++;
+                $("#wins").text("Wins: " + wins);
+                reset();
+            }
+            else if (counter > randNumber) {
+                losses++;
+                $("#losses").text("Losses: " + losses);
+                reset();
+            }
+        }
+    });
 });
 //generate random number between 19-120
 //output number
