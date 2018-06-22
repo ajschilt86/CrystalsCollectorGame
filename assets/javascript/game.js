@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var randNumber = Math.floor(Math.random() * 120) + 19;
+    var randNumber = Math.floor(Math.random() * 101) + 19;
     var randomCrystalNumber1 = Math.floor(Math.random() * 12) + 1;
     var randomCrystalNumber2 = Math.floor(Math.random() * 12) + 1;
     var randomCrystalNumber3 = Math.floor(Math.random() * 12) + 1;
@@ -10,7 +10,7 @@ $(document).ready(function () {
     var losses = 0;
 
     function reset() {
-        randNumber = Math.floor(Math.random() * 120) + 19;
+        randNumber = Math.floor(Math.random() * 101) + 19;
         randomCrystalNumber1 = Math.floor(Math.random() * 12) + 1;
         randomCrystalNumber2 = Math.floor(Math.random() * 12) + 1;
         randomCrystalNumber3 = Math.floor(Math.random() * 12) + 1;
