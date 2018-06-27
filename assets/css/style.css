@@ -39,10 +39,6 @@ ul li {
     height: 200px;    
 }
 
-#stats {
-    float: right;
-}
-
 #totalScore {
     font-size: 50px;
 }
@@ -85,8 +81,7 @@ ul li {
 	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-#crystalOne:ACTIVE, #crystalTwo:ACTIVE, #crystalThree:ACTIVE, #crystalFour:ACTIVE
-{
+#crystalOne:ACTIVE, #crystalTwo:ACTIVE, #crystalThree:ACTIVE, #crystalFour:ACTIVE {
     animation-name: shakeelement;
     -webkit-animation-name: shakeelement;
 

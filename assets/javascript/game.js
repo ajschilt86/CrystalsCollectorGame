@@ -20,20 +20,28 @@ $(document).ready(function () {
         $("#targetNumbner").text("Target Number: " + randNumber);
     }
 
+    function win() {
+        wins++;
+        $("#wins").text("Wins: " + wins);
+        reset();
+    }
+
+    function loss() {
+        losses++;
+        $("#losses").text("Losses: " + losses);
+        reset();
+    }
+
     $("#targetNumbner").text("Target Number: " + randNumber);
 
     $("#crystalOne").on("click", function () {
         counter += randomCrystalNumber1;
         $("#totalScore").text("Current Score: " + counter);
         if (counter === randNumber) {
-            wins++;
-            $("#wins").text("Wins: " + wins);
-            reset();
+            win();
         }
         else if (counter > randNumber) {
-            losses++;
-            $("#losses").text("Losses: " + losses);
-            reset();
+            loss();
         }
     });
 
@@ -41,14 +49,10 @@ $(document).ready(function () {
         counter += randomCrystalNumber2;
         $("#totalScore").text("Current Score: " + counter);
         if (counter === randNumber) {
-            wins++;
-            $("#wins").text("Wins: " + wins);
-            reset();
+            win();
         }
         else if (counter > randNumber) {
-            losses++;
-            $("#losses").text("Losses: " + losses);
-            reset();
+            loss();
         }
     });
 
@@ -56,14 +60,10 @@ $(document).ready(function () {
         counter += randomCrystalNumber3;
         $("#totalScore").text("Current Score: " + counter);
         if (counter === randNumber) {
-            wins++;
-            $("#wins").text("Wins: " + wins);
-            reset();
+            win();
         }
         else if (counter > randNumber) {
-            losses++;
-            $("#losses").text("Losses: " + losses);
-            reset();
+            loss();
         }
     });
 
@@ -71,14 +71,10 @@ $(document).ready(function () {
         counter += randomCrystalNumber4;
         $("#totalScore").text("Current Score: " + counter);
         if (counter === randNumber) {
-            wins++;
-            $("#wins").text("Wins: " + wins);
-            reset();
+            win();
         }
         else if (counter > randNumber) {
-            losses++;
-            $("#losses").text("Losses: " + losses);
-            reset();
+            loss();
         }
     });
 
@@ -94,62 +90,43 @@ $(document).ready(function () {
             console.log(randomCrystalNumber1);
 
             if (counter === randNumber) {
-                wins++;
-                $("#wins").text("Wins: " + wins);
-                reset();
+                win();
             }
             else if (counter > randNumber) {
-                losses++;
-                $("#losses").text("Losses: " + losses);
-                reset();
+                loss();
             }
         }
-
         if (e.keyCode == key_two) {
             counter += randomCrystalNumber2;
             $("#totalScore").text("Current Score: " + counter);
             console.log(randomCrystalNumber2);
             if (counter === randNumber) {
-                wins++;
-                $("#wins").text("Wins: " + wins);
-                reset();
+                win();
             }
             else if (counter > randNumber) {
-                losses++;
-                $("#losses").text("Losses: " + losses);
-                reset();
+                loss();
             }
         }
-
         if (e.keyCode == key_three) {
             counter += randomCrystalNumber3;
             $("#totalScore").text("Current Score: " + counter);
             console.log(randomCrystalNumber3);
             if (counter === randNumber) {
-                wins++;
-                $("#wins").text("Wins: " + wins);
-                reset();
+                win();
             }
             else if (counter > randNumber) {
-                losses++;
-                $("#losses").text("Losses: " + losses);
-                reset();
+                loss();
             }
         }
-
         if (e.keyCode == key_four) {
             counter += randomCrystalNumber4;
             $("#totalScore").text("Current Score: " + counter);
             console.log(randomCrystalNumber4);
             if (counter === randNumber) {
-                wins++;
-                $("#wins").text("Wins: " + wins);
-                reset();
+                win();
             }
             else if (counter > randNumber) {
-                losses++;
-                $("#losses").text("Losses: " + losses);
-                reset();
+                loss();
             }
         }
     });
